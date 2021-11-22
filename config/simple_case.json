@@ -1,0 +1,63 @@
+{
+
+  "problem_configuration": {
+
+    "transmitters": {
+      "is_static": true,
+      "static_value": 10,
+      "dynamic" : {
+        "is_int": true,
+        "range_min": 10,
+        "range_max": 200
+      }
+    },
+
+    "transmitter_power": {
+      "is_static": true,
+      "static_value": 0.5,
+      "dynamic" : {
+        "is_int": false,
+        "range_min": 0.0,
+        "range_max": 1.0
+      }
+    },
+
+    "beta": {
+      "is_static": true,
+      "static_value": 1.1,
+      "dynamic" : {
+        "is_int": false,
+        "range_min": 1.0,
+        "range_max": 2.0
+      }
+    },
+
+    "noise": {
+      "is_static": true,
+      "static_value": 0.0,
+      "dynamic" : {
+        "is_int": false,
+        "range_min": 0.0,
+        "range_max": 0.2
+      }
+    },
+
+
+    "dimension": 2
+  },
+
+  "network_config": {
+    "network_layers": 8,
+    "network_width": 256,
+    "batch_size": 64,
+    "positional_encoding": false,
+    "encoding_size": 4
+  },
+
+  "iterations": 100000,
+  "images": {
+    "output_images": true,
+    "images_to_output": 10,
+    "image_size": 400
+  }
+}
